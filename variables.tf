@@ -6,3 +6,6 @@ variable "use_locals" {
   type = bool
   default = true
 }
+# variable "slack_webhook_url" {
+#     type = string
+# }
