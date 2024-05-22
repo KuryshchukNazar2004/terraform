@@ -26,7 +26,7 @@ module "lambdas" {
   table_authors_name                     = module.table_authors.id
   table_courses_name                     = module.table_course.id
   role_get_all_authors_arn               = module.iam.role_get_all_authors_arn
-  role_get_all_course_arn               = module.iam.role_get_all_courses_arn
+  role_get_all_courses_arn               = module.iam.role_get_all_courses_arn
   role_get_course_arn                    = module.iam.role_get_course_arn
   role_save_course_arn                   = module.iam.role_save_course_arn
   role_update_course_arn                 = module.iam.role_update_course_arn

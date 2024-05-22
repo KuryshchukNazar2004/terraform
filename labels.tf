@@ -36,15 +36,15 @@ module "label_api" {
   }
 }
 
-# module "label_front_app" {
-#   source   = "cloudposse/label/null"
-#   version = "0.25.0"
+module "label_front_app" {
+  source   = "cloudposse/label/null"
+  version = "0.25.0"
 
-#   context = module.label.context
+  context = module.label.context
 
-#   name       = "front-app"
+  name       = "front-app"
 
-#   tags = {
-#     Name        = local.tag_name
-#   }
-# }
+  tags = {
+    Name        = local.tag_name
+  }
+}

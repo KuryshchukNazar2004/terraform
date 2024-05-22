@@ -10,7 +10,7 @@ variable "role_get_all_authors_arn" {
     type = string
 }
 
-variable "role_get_all_course_arn" {
+variable "role_get_all_courses_arn" {
     type = string
 }
 

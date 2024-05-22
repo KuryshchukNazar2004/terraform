@@ -6,10 +6,10 @@ output "authors_table_arn" {
     value = module.table_authors.arn
 }
 
-output "course_table_name" {
+output "courses_table_name" {
     value = module.table_course.id
 }
 
-output "course_table_arn" {
+output "courses_table_arn" {
     value = module.table_course.arn
 }
