@@ -1,5 +1,5 @@
 variable "table_authors_name" {
-    type = string
+  type = string
 }
 
 variable "table_courses_name" {
@@ -7,11 +7,12 @@ variable "table_courses_name" {
 }
 
 variable "role_get_all_authors_arn" {
-    type = string
+  type = string
 }
 
+
 variable "role_get_all_courses_arn" {
-    type = string
+  type = string
 }
 
 variable "role_get_course_arn" {
@@ -31,6 +32,29 @@ variable "role_delete_course_arn" {
 }
 
 variable "aws_api_gateway_rest_api_execution_arn" {
-    type = string
+  type = string
 }
 
+variable "logging_log_group_get_all_authors" {
+  type = string
+}
+
+variable "logging_log_group_get_all_courses" {
+  type = string
+}
+
+variable "logging_log_group_get_course" {
+  type = string
+}
+
+variable "logging_log_group_save_course" {
+  type = string
+}
+
+variable "logging_log_group_update_course" {
+  type = string
+}
+
+variable "logging_log_group_delete_course" {
+  type = string
+}

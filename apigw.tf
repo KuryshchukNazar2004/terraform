@@ -60,7 +60,7 @@ resource "aws_api_gateway_integration" "get_all_authors_integration" {
   http_method             = aws_api_gateway_method.get_all_authors.http_method
   integration_http_method = "POST"
   type                    = "AWS"
-  uri                     = module.lambdas.lambda_authors_invoke_arn
+  uri                     = module.lambdas.lambda_get_all_authors_invoke_arn
   request_parameters      = { "integration.request.header.X-Authorization" = "'static'" }
   request_templates = {
     "application/xml" = <<EOF
@@ -112,7 +112,7 @@ resource "aws_api_gateway_integration" "get_all_courses_integration" {
   http_method             = aws_api_gateway_method.get_all_courses.http_method
   integration_http_method = "POST"
   type                    = "AWS"
-  uri                     = module.lambdas.lambda_courses_invoke_arn
+  uri                     = module.lambdas.lambda_get_all_courses_invoke_arn
   request_parameters      = { "integration.request.header.X-Authorization" = "'static'" }
   request_templates = {
     "application/xml" = <<EOF
